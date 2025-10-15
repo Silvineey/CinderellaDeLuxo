@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+}
+:root{
+    --RosaClaro:#FCE4EC;
+    --RosaPrincipal:#F4A9C6;
+    --RosaEfeito:#EC759B;
+}
+body{
+    width: 100%;
+    background-color: var(--RosaClaro);
+}
+header{
+    border-radius: 10px;
+    max-width: 100%;
+    padding: 1.5em;
+    justify-content: space-evenly;
+    display: flex;
+    background-color: var(--RosaPrincipal);
+}
+.menu{
+    display: flex;
+    gap: 15px;
+}
+.menu li a{
+    color: black;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.menu li a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: #333;
+}
+main{
+    width: 100%;
+}
+.caixa img{
+    border-radius: 25px;
+    width: 200px;
+}
+.conteiner{
+    padding-top: 5em;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+    display: flex;
+}
+.caixa{
+    transition: all 1s cubic-bezier(0.215, 0.610, 0.355, 1);
+    padding: 1em;
+    border-radius: 25px;
+    border: solid 1px var(--RosaPrincipal);
+    box-shadow:1px 1px 10px var(--RosaPrincipal) ;
+}
+.caixa:hover{
+    transform: translateY(-10px);
+}
+.botao{
+    padding-top: 2.2em;
+    gap: 10px;
+    display: flex;
+    justify-content: end;
+}
+.botao button{
+    border: none;
+    padding: 10px;
+    border-radius: 25px;
+    font-size: 15px;
+    color: white;
+    background-color: #EC759B;
+    transition: background-color 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.botao button:hover{
+    cursor: pointer;
+    background-color: rgb(111, 219, 77);
+}
