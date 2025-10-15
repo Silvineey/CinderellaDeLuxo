@@ -93,6 +93,13 @@ main{
         max-width: 100%;
 
     }
+    main{
+        max-width: 100%;
+    }
+    .conteiner{
+        width: 50%;
+        flex-wrap: wrap;
+    }
     .menu{
         transition:all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
         overflow: hidden;
