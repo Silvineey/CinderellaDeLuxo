@@ -35,7 +35,6 @@ header{
 .menu li a:hover{
     text-decoration: underline;
     cursor: pointer;
-    color: #333;
 }
 main{
     width: 100%;
@@ -51,9 +50,16 @@ main{
     flex-wrap: wrap;
     max-width: 100%;
     display: flex;
-    transition: all 10s ;
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-
+.ocultar{
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
 .caixa{
     transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     padding: 1em;
@@ -101,6 +107,24 @@ footer img{
 }
 footer img:hover{
     cursor: pointer;
+}
+#papetes{
+    display: none;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+#saltos{
+    display: none;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+#bolsas{
+    display: none;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
 }
 @media screen and (max-width: 700px) {
     body{
