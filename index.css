@@ -138,8 +138,16 @@ footer img:hover{
         max-width: 100%;
     }
     .conteiner{
-        width: 50%;
         flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+    }
+    .caixa{
+        width: 45%;
+    }
+    .caixa img{
+        width: 100%;
+        transition: width 0.5s ease;
     }
     .menu{
         transition:all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
